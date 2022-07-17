@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <style>
+    fieldset {
+  width : 100%;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+  }  
+
+  input:focus:invalid {
+    box-shadow: none;
+  }
+
+  </style>
+
+<body>
+<fieldset>
+  <legend>Drink request* </legend>
+  <label>First Name</label>
+  <br>
+  <input required>
+  <br>
+  <label>Last Name</label>
+  <br>
+  <input  required>
+  <br>
+  <label>Coffee or Tea ? </label>
+  <br>
+  <label>Coffee</label>
+  <input type="radio" name="drink" value="coffee">
+  <br>
+  <label>Tea</label>
+  <input type="radio" name="drink" value="tea">
+  <br>
+  <label>Type Agree to confirm the drink</label>
+  <br>
+  <input required pattern="[Aa]gree">
+  <br>
+  <label>Leave us a comment!</label>
+  <br>
+  <textarea minlength="10" maxlength="150"></textarea>
+  <br>
+  <button>Submit</button>
+</fieldset>
+  
+</body>
+
+</html>
